@@ -31,7 +31,10 @@ import defineFunction from './src/defineFunction';
 import defineMacro from './src/defineMacro';
 import {setFontMetrics} from './src/fontMetrics';
 
-declare let __VERSION__: string;
+// rmst/katex: upstream's webpack replaces __VERSION__ at build time. Source-
+// mode consumers (qn install / qn:bundle pointing at this .ts directly) get
+// no such replacement, so we inline a constant.
+const __VERSION__: string = "0.16.45";
 
 /**
  * Parse and build an expression, and place that expression in the DOM node

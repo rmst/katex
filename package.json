@@ -5,36 +5,13 @@
   "main": "dist/katex.js",
   "types": "types/katex.d.ts",
   "exports": {
-    ".": {
-      "require": {
-        "types": "./types/katex.d.ts",
-        "default": "./dist/katex.js"
-      },
-      "import": {
-        "types": "./types/katex.d.ts",
-        "default": "./dist/katex.mjs"
-      }
-    },
-    "./contrib/auto-render": {
-      "require": "./dist/contrib/auto-render.js",
-      "import": "./dist/contrib/auto-render.mjs"
-    },
-    "./contrib/mhchem": {
-      "require": "./dist/contrib/mhchem.js",
-      "import": "./dist/contrib/mhchem.mjs"
-    },
-    "./contrib/copy-tex": {
-      "require": "./dist/contrib/copy-tex.js",
-      "import": "./dist/contrib/copy-tex.mjs"
-    },
-    "./contrib/mathtex-script-type": {
-      "require": "./dist/contrib/mathtex-script-type.js",
-      "import": "./dist/contrib/mathtex-script-type.mjs"
-    },
-    "./contrib/render-a11y-string": {
-      "require": "./dist/contrib/render-a11y-string.js",
-      "import": "./dist/contrib/render-a11y-string.mjs"
-    },
+    ".": "./katex.ts",
+    "./katex.min.css": "./katex.min.css",
+    "./contrib/auto-render": "./contrib/auto-render/auto-render.js",
+    "./contrib/mhchem": "./contrib/mhchem/mhchem.js",
+    "./contrib/copy-tex": "./contrib/copy-tex/copy-tex.js",
+    "./contrib/mathtex-script-type": "./contrib/mathtex-script-type/mathtex-script-type.js",
+    "./contrib/render-a11y-string": "./contrib/render-a11y-string/render-a11y-string.js",
     "./*": "./*"
   },
   "homepage": "https://katex.org",
